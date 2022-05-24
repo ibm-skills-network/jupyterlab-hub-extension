@@ -1,6 +1,6 @@
 {
   "name": "sn-labs-hub-extension",
-  "version": "3.4.2",
+  "version": "3.4.2-sn.0",
   "description": "JupyterLab integration for JupyterHub",
   "homepage": "https://github.com/ibm-skills-network/jupyterlab-hub-extension",
   "bugs": {
