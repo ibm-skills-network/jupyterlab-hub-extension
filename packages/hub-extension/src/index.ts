@@ -163,7 +163,9 @@ const connectionlost: JupyterFrontEndPlugin<IConnectionLost> = {
       });
       showingError = false;
       if (result.button.accept) {
-        await app.commands.execute(CommandIDs.restart);
+        // await app.commands.execute(CommandIDs.restart);
+        // instead of restarting the server, refresh the outer page and let Labs UI handle the restart
+        window.parent.postMessage("refresh", "*");
       }
     };
     return onConnectionLost;

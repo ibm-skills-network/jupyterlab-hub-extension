@@ -1,3 +1,17 @@
+# jupyterlab-hub-extension
+
+This is a fork of the official jupyterlab repo. We forked it to create a new hub extension while easily picking up the latest changes for as long as we need to maintain it.
+
+Q: Why do we need a fork of the hub extension?
+A: part of what the hub extension handles is restarts of tools when a tool is dead. When a tool is dead it prompts the user to restart the tool. Our tools need to be invoked with the right parameters (e.g. what storage to mount) otherwise they won't work. This fork changes the behaviour of the restart button to refresh the parent window (Labs UI) instead of trying to restart the tool. Labs UI will make sure the tool is invoked with the correct parameters.
+
+Q: how long do we need to maintain this fork?
+A: after we have all users on a single storage (e.g. COS) we can use the official hub extension and stop maintaining this fork.
+
+
+--------
+# Original Readme Below
+--------
 **[Installation](#installation)** |
 **[Documentation](http://jupyterlab.readthedocs.io)** |
 **[Contributing](#contributing)** |
